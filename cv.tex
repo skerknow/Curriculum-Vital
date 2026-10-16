@@ -1,0 +1,183 @@
+%-------------------------
+%---- Paquetes requeridos ----
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{import}
+\subimport{}{packages.tex}
+\subimport{}{macros.tex}
+
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{ragged2e}
+
+%-------------------------------------------
+%%%%%% INICIO DEL CV %%%%%%
+%%%%%% DEFINICIÓN DE DATOS %%%%%%
+
+\newcommand{\name}{Jeanpier Alexander Robles Fabian}
+\newcommand{\phone}{926 776 359}
+\newcommand{\emaila}{jeanpierrf31@gmail.com}
+\newcommand{\linkedin}{https://www.linkedin.com/in/jeanpier-robles/}
+\newcommand{\github}{https://github.com/jeannrf}
+\newcommand{\location}{Lima, Perú}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------ENCABEZADO-----------------
+\begin{center}
+    {\Huge\bfseries \name\par}
+
+
+
+    \vspace{2mm}
+
+    {\small
+        \location
+        \enspace\textbar\enspace
+        \href{mailto:\emaila}{\emaila}
+        \enspace\textbar\enspace
+        +51 \phone
+        \par
+    }
+
+    \vspace{1mm}
+
+    {\small
+        \href{\linkedin}{LinkedIn}
+        \enspace\textbar\enspace
+        \href{\github}{GitHub}
+        \par
+    }
+\end{center}
+
+\vspace{2mm}
+
+
+%-------------PROFILE-----------------
+\begin{addmargin}[\leftM]{\rightM}
+\justifying
+Estudiante de Ingeniería de Software de la UNI, perteneciente al décimo superior, con experiencia en proyectos de desarrollo web, ciencia de datos e inteligencia artificial.
+He participado en la creación de soluciones aplicadas a desarrollo de sistemas, automatización y gestión de información.
+Cuento con experiencia liderando equipos de desarrollo y coordinando proyectos tecnológicos multidisciplinarios.
+
+\end{addmargin}
+
+%-----------EDUCATION-----------------
+\section{\textbf{FORMACIÓN ACADÉMICA}}
+\begin{tabularx}{\textwidth}{p{14cm} R}
+  \textbf{Estudiante de Ingeniería de Software - Quinto Ciclo} & \textit{\footnotesize Agosto 2024 -- Actualidad} \\
+  Universidad Nacional de Ingeniería (UNI) & \\
+  \small Décimo Superior - Top 7 de la Especialidad (Ciclo 26-1) &
+\end{tabularx}
+
+
+%-----------LEADERSHIP-----------------
+\section{\textbf{LIDERAZGO Y ACTIVIDADES EXTRACURRICULARES}}
+
+%--- Liderazgo y Actividad 1 ---
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Líder organizador - Software Week 2026} & \textit{\small Junio 2026 -- Septiembre 2026}
+\end{tabularx}
+
+\begin{itemize}[leftmargin=1.5em, nosep]
+\item Coordinación con 4 áreas y planificación del congreso, cronograma de marketing, creación de bases de las actividades, negociación con patrocinadores, desarrollo de plataforma web con gestión de base de datos.
+\end{itemize}
+
+\vspace{3mm}
+
+%--- Liderazgo y Actividad 2 ---
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Director del área de IT - TinkuyLabs} & \textit{\small Marzo 2026 -- Presente}
+\end{tabularx}
+
+\begin{itemize}[leftmargin=1.5em, nosep]
+\item Planificación de proyectos tecnológicos como página web, sistema de inscripción, entregables via web.
+\end{itemize}
+
+\vspace{3mm}
+
+%--- Liderazgo y Actividad 3 ---
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Director de Relaciones Públicas - Unicode} & \textit{\small Agosto 2025 -- Agosto 2026}
+\end{tabularx}
+
+\begin{itemize}[leftmargin=1.5em, nosep]
+\item Realización de 4 eventos tecnológicos de alto impacto llegando a tener picos de +180 asistentes dentro de la UNI, gestión de alianzas, coordinación y contacto con ponentes del sector tech. 
+\end{itemize}
+
+\vspace{2mm}
+
+%-----------------Habilidades & Certificaciones-----------
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{PROYECTOS Y EXPERIENCIA RELEVANTE}}
+
+%--- Project 1: Cupo Cero ---
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Cupo Cero — Multiplataforma de reporte de extorsiones} & \textit{\small Agosto 2026}
+\end{tabularx}
+\small
+Sistema móvil y web para la geolocalización de zonas de riesgo por extorsión nacional, diseñado para apoyar a las municipalidades y agilizar el proceso de denuncia de las víctimas.
+
+\begin{itemize}[leftmargin=1.5em, nosep]
+\item Integré Gemma con LiteRT-LM para extraer datos de chats en el dispositivo, preservando la privacidad.
+\item Desarrollé un dashboard con mapas de calor, trazabilidad de denuncias e integración con la app móvil.
+
+\end{itemize}
+
+\textbf {Tecnologías:} React, Gemma LLM, Google AI Edge (LiteRT-LM), Firebase, Cloud Run, Firestore
+
+\vspace{5mm}
+
+%--- Project 2: Unicode Landing Page ---
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{Unicode Page -- Plataforma Institucional} & \textit{\small Marzo 2026 -- Abril 2026}
+\end{tabularx}
+
+\small
+Plataforma web desarrollada para la visibilidad de la organización, impactando a una comunidad y gestionando la difusión de proyectos y eventos tecnológicos. En este proyecto tomé el rol de líder de un equipo de 4 personas.
+
+\begin{itemize}[leftmargin=1.5em, nosep]
+\item Lideré a 4 estudiantes de Software usando Git/GitHub, revisión de pull requests y desarrollo con buenas prácticas.
+\item Implementé el backend de convocatorias con PostgreSQL, postulaciones, autenticación y control de acceso.
+\end{itemize}
+
+\textbf{Tecnologías:} Astro, TypeScript, Tailwind CSS, Supabase (PostgreSQL), Vercel, Git, GitHub
+
+\vspace{5mm}
+%--- Project 3: AutoML Advisor ---
+\noindent
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+\textbf{AutoML Advisor – Consultor Inteligente de Ciencia de Datos} & \textit{\small Diciembre 2025}
+\end{tabularx}
+
+\small
+Aplicación web inteligente que automatiza el análisis de datasets y traduce resultados de machine learning en recomendaciones comprensibles para el usuario.
+\begin{itemize}[leftmargin=1.5em, nosep]
+    \item Implementé preprocesamiento de datos, división 80/20 de entrenamiento y prueba comparando modelos de Regresión Logística, Regresión Lineal y Random Forest para problemas de clasificación y regresión.
+    \item Integré Groq API para interpretar métricas, detectar problemas de calidad y generar recomendaciones.
+\end{itemize}
+
+\textbf{Tecnologías:} Python, FastAPI, Pandas, NumPy, Scikit-learn, Groq API, JavaScript, HTML, CSS.
+
+\vspace{5mm}
+
+%-----------------Habilidades & Certificaciones-----------
+\section{\textbf{HABILIDADES Y CERTIFICACIONES}}
+
+\begin{itemize}[leftmargin=1.5em, nosep]
+\item \textbf{Desarrollo Frontend:} Astro, Tailwind CSS, TypeScript, React, JavaScript, HTML, CSS.
+    \item \textbf{Backend y Datos:} Python (Scikit-learn, Pandas), FastAPI, Java, PostgreSQL, Supabase, Firebase.
+    \item \textbf{IA y Productividad:} Herramientas de IA para desarrollo de software, Figma, Ofimática.
+    \item \textbf{Certificaciones:} Introduction to DevOps (IBM), Introducción al Desarrollo de Software (PUCP), Generative AI: Introduction and Applications (IBM), Introduction to Data Science (IBM) Liderazgo y Comunicación (U. Palermo).
+    \item \textbf{Idiomas:} Español (Nativo), Inglés (B1)
+\end{itemize}
+
+\end{document}
